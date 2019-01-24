@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="${root}/img/favicon.ico">
 
     <title>Fixed top navbar example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${root}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -30,7 +30,7 @@
 
 <div class="container">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/index">首页</a></li>
+        <li class="breadcrumb-item"><a href="${root}/index">首页</a></li>
         <li class="breadcrumb-item">系统管理</li>
         <li class="breadcrumb-item active">修改模块</li>
     </ol>
@@ -38,29 +38,18 @@
         <div class="col-3">
             <ul id="orgTree" class="ztree"></ul>
         </div>
-        <!-- id 角色编号  roleModules 此角色的模块  allModules 所有模块 -->
         <div class="col-9">
-            <form action="/system/role/modifymodule" method="post">
-                <input type="hidden" name="roleId" value="${id}"/>
-                <c:forEach items="${modules}" var="m1">
+            <form action="${root}/system/role/modifymodule" method="post">
+                <input type="hidden" name="roleId" value="${param.id}"/>
+                <c:forEach items="${modules}" var="m">
                     <div class="form-check">
-                        <c:if test="${roleModules.contains(m1)}">
-                            <input type="checkbox" value="${m1.id}" name="moduleId" checked>
-                        </c:if>
-                        <c:if test="${not roleModules.contains(m1)}">
-                            <input type="checkbox" value="${m1.id}" name="moduleId" >
-                        </c:if>
-                        <a class="btn btn-info module" href="javascript:void(0)" role="button" data-check="true">${m1.name}</a>
+                        <a class="btn btn-info module" href="javascript:void(0)" role="button" data-check="true">${m.name}</a>
                         <div></div>
-                        <c:forEach items="${m1.children}" var="m2">
+                        <c:forEach items="${m.children}" var="m2">
+                            <c:set var="ck" value="${ids.contains(m2.id)}"/>
                             <div class="form-check form-check-inline">
                                 <label class="form-check-label">
-                                    <c:if test="${roleModules.contains(m2)}">
-                                        <input name="moduleId" class="form-check-input" type="checkbox" value="${m2.id}" checked> ${m2.name}
-                                    </c:if>
-                                    <c:if test="${not roleModules.contains(m2)}">
-                                        <input name="moduleId" class="form-check-input" type="checkbox" value="${m2.id}" > ${m2.name}
-                                    </c:if>
+                                    <input name="moduleId" class="form-check-input" type="checkbox" value="${m2.id}" ${ck?'checked':''}> ${m2.name}
                                 </label>
                             </div>
                         </c:forEach>

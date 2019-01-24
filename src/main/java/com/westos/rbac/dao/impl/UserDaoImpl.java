@@ -31,7 +31,7 @@ public class UserDaoImpl implements UserDao {
                     String str = set.getString("ORG_IDS");
                     Integer[] orgIds = StringUtil.split(str);
                     user.setOrgIds(orgIds);
-                    System.out.println(roleDao.findByUserId(user.getId()));
+
                     user.setRoles(roleDao.findByUserId(user.getId()));
                     return user;
                 }
