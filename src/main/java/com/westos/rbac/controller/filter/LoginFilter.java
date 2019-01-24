@@ -1,16 +1,29 @@
 package com.westos.rbac.controller.filter;
 
+import com.westos.rbac.dao.ModuleDao;
+import com.westos.rbac.dao.UserDao;
+import com.westos.rbac.dao.impl.ModuleDaoImpl;
+import com.westos.rbac.dao.impl.UserDaoImpl;
+import com.westos.rbac.domain.Module;
+import com.westos.rbac.domain.Role;
+import com.westos.rbac.domain.User;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * @author yihang
  */
 @WebFilter("/*")
 public class LoginFilter implements Filter {
+    ModuleDao moduleDao = new ModuleDaoImpl();
+    UserDao userDao = new UserDaoImpl();
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -49,7 +62,32 @@ public class LoginFilter implements Filter {
         } else {
             resp.sendRedirect(req.getContextPath() + "/login.jsp?error=");
         }
+        //权限拦截
+        if (user != null) {
+            if(req.getRequestURI().equals(req.getContextPath() + "/index.jsp")){
+                return;
+            }
+            boolean flag = false;
+            List<Role> roles =((User) user).getRoles();
+            List<Module> lists = new ArrayList<>();
+            for (Role role : roles) {
+                List<Module> modules = role.getModules();
+                lists.addAll(modules);
+            }
 
+            for (Module module : lists) {
+                if(req.getRequestURI().equals(req.getContextPath() + module.getCode())){
+                    flag = true;
+                }else {
+                    flag = false;
+                }
+            }
+            if(flag == true){
+                chain.doFilter(req,response);
+            }else  {
+                resp.sendError(403);
+            }
+        }
     }
 
     @Override

@@ -47,6 +47,7 @@ public class LoginServlet extends HttpServlet {
             return;
         }
         req.getSession().setAttribute("principal",user);
+
         List<Role> roles = user.getRoles();
         List<Module> lists = new ArrayList<>();
         for (Role role : roles) {
