@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="388cdf49-7f39-4fbf-af29-58a4cec5f29d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/westos/rbac/controller/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/westos/rbac/controller/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo_rbac-1.0-SNAPSHOT/WEB-INF/classes/com/westos/rbac/controller/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo_rbac-1.0-SNAPSHOT/WEB-INF/classes/com/westos/rbac/controller/filter/LoginFilter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,13 +22,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6531842">
+    <splitter split-orientation="horizontal" split-proportion="0.5649289">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
+                <state relative-caret-position="775">
                   <caret line="49" selection-start-line="49" selection-end-line="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -38,7 +40,7 @@
           <file leaf-file-name="CaptchaServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/CaptchaServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-299">
+                <state relative-caret-position="100">
                   <caret line="14" column="35" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="35" />
                 </state>
               </provider>
@@ -47,7 +49,7 @@
           <file leaf-file-name="ModuleDaoImpl.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/dao/impl/ModuleDaoImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1086">
+                <state relative-caret-position="925">
                   <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -56,11 +58,44 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java">
               <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="129">
+                  <caret line="35" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="35" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ModuleFilter.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/ModuleFilter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProductSearchServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/product/ProductSearchServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="175">
-                  <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+                  <caret line="12" column="28" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RoleToModifyModuleServlet.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/RoleToModifyModuleServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="850">
+                  <caret line="45" column="69" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="69" />
                 </state>
               </provider>
             </entry>
@@ -68,7 +103,7 @@
           <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/dao/impl/UserDaoImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1875">
+                <state relative-caret-position="1650">
                   <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -80,7 +115,7 @@
           <file leaf-file-name="tomodifyrole.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/user/tomodifyrole.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="393">
+                <state relative-caret-position="1100">
                   <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
                 </state>
               </provider>
@@ -95,36 +130,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserToUpdateServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/UserToUpdateServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="201">
-                  <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserUpdateServlet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/UserUpdateServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-24">
-                  <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="1200">
+                  <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -132,7 +146,7 @@
           <file leaf-file-name="nav.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/nav.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="550">
+                <state relative-caret-position="1">
                   <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
                 </state>
               </provider>
@@ -211,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/westos/rbac/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/ModuleFilter.java" />
       </list>
     </option>
   </component>
@@ -230,8 +245,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="683" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-89" />
+    <option name="y" value="75" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -242,7 +258,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +309,36 @@
               <item name="rbac" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo_rbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo_rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo_rbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo_rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo_rbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo_rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo_rbac" type="b2602c69:ProjectViewProjectNode" />
@@ -386,6 +431,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -612,12 +658,13 @@
       <workItem from="1547972008039" duration="2709000" />
       <workItem from="1548122324206" duration="12657000" />
       <workItem from="1548205539798" duration="7890000" />
-      <workItem from="1548299790671" duration="9873000" />
+      <workItem from="1548299790671" duration="11477000" />
+      <workItem from="1548378638660" duration="4525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100576000" />
+    <option name="totallyTimeSpent" value="106705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -636,17 +683,16 @@
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32933104" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3281787" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32933104" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.580756" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30584192" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.33745584" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -656,6 +702,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33745584" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Maven" order="3" />
@@ -709,8 +756,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/order/OrderRefundServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -875,9 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,13 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-185">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/RoleToModifyModuleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -948,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,21 +1016,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/UserUpdateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="450">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/CaptchaServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
+        <state relative-caret-position="100">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/dao/impl/ModuleDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1086">
+        <state relative-caret-position="925">
           <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1015,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/dao/impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
+        <state relative-caret-position="1650">
           <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1025,8 +1057,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/user/tomodifyrole.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="1100">
           <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/product/ProductSearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1037,27 +1093,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/nav.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/system/RoleToModifyModuleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="850">
+          <caret line="45" column="69" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="129">
+          <caret line="35" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/westos/rbac/controller/filter/ModuleFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

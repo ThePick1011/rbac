@@ -62,33 +62,8 @@ public class LoginFilter implements Filter {
         } else {
             resp.sendRedirect(req.getContextPath() + "/login.jsp?error=");
         }
-        //权限拦截
-        if (user != null) {
-            if(req.getRequestURI().equals(req.getContextPath() + "/index.jsp")){
-                return;
-            }
-            boolean flag = false;
-            List<Role> roles =((User) user).getRoles();
-            List<Module> lists = new ArrayList<>();
-            for (Role role : roles) {
-                List<Module> modules = role.getModules();
-                lists.addAll(modules);
-            }
 
-            for (Module module : lists) {
-                if(req.getRequestURI().equals(req.getContextPath() + module.getCode())){
-                    flag = true;
-                }else {
-                    flag = false;
-                }
-            }
-            if(flag == true){
-                chain.doFilter(req,response);
-            }else  {
-                resp.sendError(403);
-            }
-        }
-    }
+   }
 
     @Override
     public void destroy() {
